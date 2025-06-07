@@ -1,0 +1,118 @@
+<html>
+<head>
+<title>Principal.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cf8e6d;}
+.s1 { color: #bcbec4;}
+.s2 { color: #bcbec4;}
+.s3 { color: #6aab73;}
+.s4 { color: #2aacb8;}
+.s5 { color: #7a7e85;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Principal.java</font>
+</center></td></tr></table>
+<pre><span class="s0">package </span><span class="s1">br</span><span class="s2">.</span><span class="s1">com</span><span class="s2">.</span><span class="s1">visao</span><span class="s2">;</span>
+
+<span class="s0">public class </span><span class="s1">Principal </span><span class="s0">extends </span><span class="s1">javax</span><span class="s2">.</span><span class="s1">swing</span><span class="s2">.</span><span class="s1">JFrame </span><span class="s2">{</span>
+
+    <span class="s0">public </span><span class="s1">Principal</span><span class="s2">() {</span>
+        <span class="s1">initComponents</span><span class="s2">();</span>
+    <span class="s2">}</span>
+
+    <span class="s1">@SuppressWarnings</span><span class="s2">(</span><span class="s3">&quot;unchecked&quot;</span><span class="s2">)</span>
+    <span class="s0">private void </span><span class="s1">initComponents</span><span class="s2">() {</span>
+
+        <span class="s1">jMenuBar1 </span><span class="s2">= </span><span class="s0">new </span><span class="s1">javax</span><span class="s2">.</span><span class="s1">swing</span><span class="s2">.</span><span class="s1">JMenuBar</span><span class="s2">();</span>
+        <span class="s1">jMenu1 </span><span class="s2">= </span><span class="s0">new </span><span class="s1">javax</span><span class="s2">.</span><span class="s1">swing</span><span class="s2">.</span><span class="s1">JMenu</span><span class="s2">();</span>
+        <span class="s1">jMenuItem1 </span><span class="s2">= </span><span class="s0">new </span><span class="s1">javax</span><span class="s2">.</span><span class="s1">swing</span><span class="s2">.</span><span class="s1">JMenuItem</span><span class="s2">();</span>
+        <span class="s1">jMenu2 </span><span class="s2">= </span><span class="s0">new </span><span class="s1">javax</span><span class="s2">.</span><span class="s1">swing</span><span class="s2">.</span><span class="s1">JMenu</span><span class="s2">();</span>
+        <span class="s1">jMenuItem2 </span><span class="s2">= </span><span class="s0">new </span><span class="s1">javax</span><span class="s2">.</span><span class="s1">swing</span><span class="s2">.</span><span class="s1">JMenuItem</span><span class="s2">();</span>
+        <span class="s1">jMenu3 </span><span class="s2">= </span><span class="s0">new </span><span class="s1">javax</span><span class="s2">.</span><span class="s1">swing</span><span class="s2">.</span><span class="s1">JMenu</span><span class="s2">();</span>
+        <span class="s1">jMenuItem3 </span><span class="s2">= </span><span class="s0">new </span><span class="s1">javax</span><span class="s2">.</span><span class="s1">swing</span><span class="s2">.</span><span class="s1">JMenuItem</span><span class="s2">();</span>
+        <span class="s1">jMenu4 </span><span class="s2">= </span><span class="s0">new </span><span class="s1">javax</span><span class="s2">.</span><span class="s1">swing</span><span class="s2">.</span><span class="s1">JMenu</span><span class="s2">();</span>
+        <span class="s1">jMenuItem4 </span><span class="s2">= </span><span class="s0">new </span><span class="s1">javax</span><span class="s2">.</span><span class="s1">swing</span><span class="s2">.</span><span class="s1">JMenuItem</span><span class="s2">();</span>
+
+        <span class="s1">setDefaultCloseOperation</span><span class="s2">(</span><span class="s1">javax</span><span class="s2">.</span><span class="s1">swing</span><span class="s2">.</span><span class="s1">WindowConstants</span><span class="s2">.</span><span class="s1">EXIT_ON_CLOSE</span><span class="s2">);</span>
+        <span class="s1">setResizable</span><span class="s2">(</span><span class="s0">false</span><span class="s2">);</span>
+
+        <span class="s1">jMenu1</span><span class="s2">.</span><span class="s1">setText</span><span class="s2">(</span><span class="s3">&quot;Arquivo&quot;</span><span class="s2">);</span>
+
+        <span class="s1">jMenuItem1</span><span class="s2">.</span><span class="s1">setText</span><span class="s2">(</span><span class="s3">&quot;Cadastro Veículo&quot;</span><span class="s2">);</span>
+        <span class="s1">jMenuItem1</span><span class="s2">.</span><span class="s1">addActionListener</span><span class="s2">(</span><span class="s1">evt -&gt; </span><span class="s2">{</span>
+            <span class="s1">CadastroVeiculo ca </span><span class="s2">= </span><span class="s0">new </span><span class="s1">CadastroVeiculo</span><span class="s2">();</span>
+            <span class="s1">ca</span><span class="s2">.</span><span class="s1">setVisible</span><span class="s2">(</span><span class="s0">true</span><span class="s2">);</span>
+        <span class="s2">});</span>
+        <span class="s1">jMenu1</span><span class="s2">.</span><span class="s1">add</span><span class="s2">(</span><span class="s1">jMenuItem1</span><span class="s2">);</span>
+        <span class="s1">jMenuBar1</span><span class="s2">.</span><span class="s1">add</span><span class="s2">(</span><span class="s1">jMenu1</span><span class="s2">);</span>
+
+        <span class="s1">jMenu2</span><span class="s2">.</span><span class="s1">setText</span><span class="s2">(</span><span class="s3">&quot;Deletar&quot;</span><span class="s2">);</span>
+
+        <span class="s1">jMenuItem2</span><span class="s2">.</span><span class="s1">setText</span><span class="s2">(</span><span class="s3">&quot;Deletar Veículo&quot;</span><span class="s2">);</span>
+        <span class="s1">jMenuItem2</span><span class="s2">.</span><span class="s1">addActionListener</span><span class="s2">(</span><span class="s1">evt -&gt; </span><span class="s2">{</span>
+            <span class="s1">FormDeletarVeiculo d </span><span class="s2">= </span><span class="s0">new </span><span class="s1">FormDeletarVeiculo</span><span class="s2">();</span>
+            <span class="s1">d</span><span class="s2">.</span><span class="s1">setVisible</span><span class="s2">(</span><span class="s0">true</span><span class="s2">);</span>
+        <span class="s2">});</span>
+        <span class="s1">jMenu2</span><span class="s2">.</span><span class="s1">add</span><span class="s2">(</span><span class="s1">jMenuItem2</span><span class="s2">);</span>
+        <span class="s1">jMenuBar1</span><span class="s2">.</span><span class="s1">add</span><span class="s2">(</span><span class="s1">jMenu2</span><span class="s2">);</span>
+
+        <span class="s1">jMenu3</span><span class="s2">.</span><span class="s1">setText</span><span class="s2">(</span><span class="s3">&quot;Relatórios&quot;</span><span class="s2">);</span>
+
+        <span class="s1">jMenuItem3</span><span class="s2">.</span><span class="s1">setText</span><span class="s2">(</span><span class="s3">&quot;Listar Veículos&quot;</span><span class="s2">);</span>
+        <span class="s1">jMenuItem3</span><span class="s2">.</span><span class="s1">addActionListener</span><span class="s2">(</span><span class="s1">evt -&gt; </span><span class="s2">{</span>
+            <span class="s1">FormListaVeiculo l </span><span class="s2">= </span><span class="s0">new </span><span class="s1">FormListaVeiculo</span><span class="s2">();</span>
+            <span class="s1">l</span><span class="s2">.</span><span class="s1">setVisible</span><span class="s2">(</span><span class="s0">true</span><span class="s2">);</span>
+        <span class="s2">});</span>
+        <span class="s1">jMenu3</span><span class="s2">.</span><span class="s1">add</span><span class="s2">(</span><span class="s1">jMenuItem3</span><span class="s2">);</span>
+        <span class="s1">jMenuBar1</span><span class="s2">.</span><span class="s1">add</span><span class="s2">(</span><span class="s1">jMenu3</span><span class="s2">);</span>
+
+        <span class="s1">jMenu4</span><span class="s2">.</span><span class="s1">setText</span><span class="s2">(</span><span class="s3">&quot;Alterar&quot;</span><span class="s2">);</span>
+
+        <span class="s1">jMenuItem4</span><span class="s2">.</span><span class="s1">setText</span><span class="s2">(</span><span class="s3">&quot;Alterar Veículo&quot;</span><span class="s2">);</span>
+        <span class="s1">jMenuItem4</span><span class="s2">.</span><span class="s1">addActionListener</span><span class="s2">(</span><span class="s1">evt -&gt; </span><span class="s2">{</span>
+            <span class="s1">FormAlterarVeiculo al </span><span class="s2">= </span><span class="s0">new </span><span class="s1">FormAlterarVeiculo</span><span class="s2">();</span>
+            <span class="s1">al</span><span class="s2">.</span><span class="s1">setVisible</span><span class="s2">(</span><span class="s0">true</span><span class="s2">);</span>
+        <span class="s2">});</span>
+        <span class="s1">jMenu4</span><span class="s2">.</span><span class="s1">add</span><span class="s2">(</span><span class="s1">jMenuItem4</span><span class="s2">);</span>
+        <span class="s1">jMenuBar1</span><span class="s2">.</span><span class="s1">add</span><span class="s2">(</span><span class="s1">jMenu4</span><span class="s2">);</span>
+
+        <span class="s1">setJMenuBar</span><span class="s2">(</span><span class="s1">jMenuBar1</span><span class="s2">);</span>
+
+        <span class="s1">javax</span><span class="s2">.</span><span class="s1">swing</span><span class="s2">.</span><span class="s1">GroupLayout layout </span><span class="s2">= </span><span class="s0">new </span><span class="s1">javax</span><span class="s2">.</span><span class="s1">swing</span><span class="s2">.</span><span class="s1">GroupLayout</span><span class="s2">(</span><span class="s1">getContentPane</span><span class="s2">());</span>
+        <span class="s1">getContentPane</span><span class="s2">().</span><span class="s1">setLayout</span><span class="s2">(</span><span class="s1">layout</span><span class="s2">);</span>
+        <span class="s1">layout</span><span class="s2">.</span><span class="s1">setHorizontalGroup</span><span class="s2">(</span>
+                <span class="s1">layout</span><span class="s2">.</span><span class="s1">createParallelGroup</span><span class="s2">(</span><span class="s1">javax</span><span class="s2">.</span><span class="s1">swing</span><span class="s2">.</span><span class="s1">GroupLayout</span><span class="s2">.</span><span class="s1">Alignment</span><span class="s2">.</span><span class="s1">LEADING</span><span class="s2">)</span>
+                        <span class="s2">.</span><span class="s1">addGap</span><span class="s2">(</span><span class="s4">0</span><span class="s2">, </span><span class="s4">500</span><span class="s2">, </span><span class="s1">Short</span><span class="s2">.</span><span class="s1">MAX_VALUE</span><span class="s2">)</span>
+        <span class="s2">);</span>
+        <span class="s1">layout</span><span class="s2">.</span><span class="s1">setVerticalGroup</span><span class="s2">(</span>
+                <span class="s1">layout</span><span class="s2">.</span><span class="s1">createParallelGroup</span><span class="s2">(</span><span class="s1">javax</span><span class="s2">.</span><span class="s1">swing</span><span class="s2">.</span><span class="s1">GroupLayout</span><span class="s2">.</span><span class="s1">Alignment</span><span class="s2">.</span><span class="s1">LEADING</span><span class="s2">)</span>
+                        <span class="s2">.</span><span class="s1">addGap</span><span class="s2">(</span><span class="s4">0</span><span class="s2">, </span><span class="s4">400</span><span class="s2">, </span><span class="s1">Short</span><span class="s2">.</span><span class="s1">MAX_VALUE</span><span class="s2">)</span>
+        <span class="s2">);</span>
+
+        <span class="s1">pack</span><span class="s2">();</span>
+        <span class="s1">setLocationRelativeTo</span><span class="s2">(</span><span class="s0">null</span><span class="s2">);</span>
+    <span class="s2">}</span>
+
+    <span class="s0">public static void </span><span class="s1">main</span><span class="s2">(</span><span class="s1">String args</span><span class="s2">[]) {</span>
+        <span class="s1">java</span><span class="s2">.</span><span class="s1">awt</span><span class="s2">.</span><span class="s1">EventQueue</span><span class="s2">.</span><span class="s1">invokeLater</span><span class="s2">(() </span><span class="s1">-&gt; </span><span class="s0">new </span><span class="s1">Principal</span><span class="s2">().</span><span class="s1">setVisible</span><span class="s2">(</span><span class="s0">true</span><span class="s2">));</span>
+    <span class="s2">}</span>
+
+    <span class="s5">// Declaração dos componentes</span>
+    <span class="s0">private </span><span class="s1">javax</span><span class="s2">.</span><span class="s1">swing</span><span class="s2">.</span><span class="s1">JMenu jMenu1</span><span class="s2">;</span>
+    <span class="s0">private </span><span class="s1">javax</span><span class="s2">.</span><span class="s1">swing</span><span class="s2">.</span><span class="s1">JMenu jMenu2</span><span class="s2">;</span>
+    <span class="s0">private </span><span class="s1">javax</span><span class="s2">.</span><span class="s1">swing</span><span class="s2">.</span><span class="s1">JMenu jMenu3</span><span class="s2">;</span>
+    <span class="s0">private </span><span class="s1">javax</span><span class="s2">.</span><span class="s1">swing</span><span class="s2">.</span><span class="s1">JMenu jMenu4</span><span class="s2">;</span>
+    <span class="s0">private </span><span class="s1">javax</span><span class="s2">.</span><span class="s1">swing</span><span class="s2">.</span><span class="s1">JMenuBar jMenuBar1</span><span class="s2">;</span>
+    <span class="s0">private </span><span class="s1">javax</span><span class="s2">.</span><span class="s1">swing</span><span class="s2">.</span><span class="s1">JMenuItem jMenuItem1</span><span class="s2">;</span>
+    <span class="s0">private </span><span class="s1">javax</span><span class="s2">.</span><span class="s1">swing</span><span class="s2">.</span><span class="s1">JMenuItem jMenuItem2</span><span class="s2">;</span>
+    <span class="s0">private </span><span class="s1">javax</span><span class="s2">.</span><span class="s1">swing</span><span class="s2">.</span><span class="s1">JMenuItem jMenuItem3</span><span class="s2">;</span>
+    <span class="s0">private </span><span class="s1">javax</span><span class="s2">.</span><span class="s1">swing</span><span class="s2">.</span><span class="s1">JMenuItem jMenuItem4</span><span class="s2">;</span>
+<span class="s2">}</span>
+</pre>
+</body>
+</html>
